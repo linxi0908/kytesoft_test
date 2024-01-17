@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .App-logo {
@@ -35,4 +37,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+:root{
+  --white: #FFFFFF;
+  --black:#262626;
+  --orange: #FAEFDB;
+  --yellow: #FAA721;
+  --gray: #e5e2e2;
 }
