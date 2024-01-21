@@ -9,14 +9,19 @@ import Newsletter from "../newsletter/Newletter";
 const StyleSelectSearch = styled.div`
   display: flex;
   position: relative;
-  z-index: 3;
   .box1 {
     display: flex;
-  }
-  .border_line{
+    justify-content: space-around;
+    .row{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+    }
+  .border_line {
     border-bottom: 1px solid var(--gray);
-    padding: 5px 0px;
-    margin: 0 20px;
+    padding: 5px 10px;
+    margin: 0 auto;
     align-items: center;
   }
 `;
@@ -25,28 +30,24 @@ export default function Select_Search() {
     <StyleSelectSearch>
       <Row>
         <div className="box1">
-          <Col>
-            <Row>
-              <Col>
-                <Baths_Select />
-              </Col>
-              <Col>
-                <Beds_Select />
-              </Col>
-            </Row>
-          </Col>
           <Row>
-            <Col>
-            <Price_Widget />
+            <Col md={6} lg={3}>
+              <Baths_Select />
             </Col>
-            <Col>
-            <Size_Widget />
+            <Col md={6} lg={3}>
+              <Beds_Select />
+            </Col>
+            <Col md={6} lg={3}>
+              <Price_Widget />
+            </Col>
+            <Col md={6} lg={3}>
+              <Size_Widget />
             </Col>
           </Row>
         </div>
         <div className="border_line"></div>
         <div className="box2">
-            <Newsletter/>
+          <Newsletter />
         </div>
       </Row>
     </StyleSelectSearch>

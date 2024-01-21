@@ -54,7 +54,7 @@ const StyleSlider = styled.section`
       width: 100% !important;
       background-color: var(--white);
       border-radius: 10px;
-      padding: 20px;
+      padding: 15px;
     }
     .col{
       display:flex;

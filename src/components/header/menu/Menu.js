@@ -17,7 +17,6 @@ const StyledMenu = styled.div`
     :hover .menu2 {
       display: block;
     }
-    
   }
 
   .handle_li {
@@ -43,7 +42,7 @@ const StyledMenu = styled.div`
     margin-top: 5px;
     padding-top: 5px;
     padding-left: 30px;
-    top: 64px;
+    top: 60px;
     display: none;
     z-index: 3;
     background: var(--white);
@@ -58,6 +57,10 @@ const StyledMenu = styled.div`
     :hover .dropdown-detail svg {
       display: block;
     }
+    li:hover {
+      transform: translateX(10px);
+      transition: 0.5s;
+    } 
     li {
       color: var(--black);
       display: flex;
@@ -82,7 +85,7 @@ const StyledMenu = styled.div`
     position: absolute;
     background: var(--white);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    left: 225px;
+    left: 200px;
     width: 270px;
     padding-top: 5px;
     padding-bottom: 5px;

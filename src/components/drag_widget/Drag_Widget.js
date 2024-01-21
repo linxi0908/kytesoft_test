@@ -5,10 +5,7 @@ import "nouislider/dist/nouislider.css";
 
 const StyleDragWidget = styled.div`
   .wg-box3 {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 100%;
   }
 
   .widget .caption {
@@ -19,30 +16,6 @@ const StyleDragWidget = styled.div`
 
   .widget .caption span {
     margin-right: 10px;
-  }
-
-  .noUi-target {
-    width: 100%;
-    height: 7px;
-    border-radius: 2px;
-  }
-
-  .noUi-connect {
-    background: var(--yellow);
-    -webkit-transition: background 450ms;
-    transition: background 450ms;
-  }
-
-  .noUi-origin {
-    position: absolute;
-    right: 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
-  }
-
-  .noUi-background {
-    background: #d6d7d9;
   }
 
   .slider-range {
@@ -62,6 +35,38 @@ const StyleDragWidget = styled.div`
   .slider-labels input[type="hidden"] {
     display: none;
   }
+
+  .noUi-target {
+    width: 100%;
+    height: 7px;
+    border-radius: 2px;
+  }
+
+  .noUi-connect {
+    background: var(--yellow);
+    -webkit-transition: background 450ms;
+    transition: background 450ms;
+  }
+
+  .noUi-handle{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    border: 1px solid #ccc;
+    
+  }
+  .noUi-handle::before {
+      content: "";
+      display: none;
+
+    }
+    .noUi-handle::after {
+      content: "";
+      display: none;
+
+    }
 `;
 
 export default function Drag_Widget({ minValue, maxValue, range, onRangeChange, type }) {

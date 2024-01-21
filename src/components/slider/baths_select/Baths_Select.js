@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Select from "../../select/Select";
 
 const StyleBathsSelect = styled.div`
+  width: 100% !important;
 `;
 export default function Baths_Select() {
     const options = [

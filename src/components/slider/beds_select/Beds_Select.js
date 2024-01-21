@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Select from "../../select/Select";
 
 const StyleBedsSelect = styled.div`
+width: 100%;
 `;
 export default function Beds_Select() {
     const options = [
